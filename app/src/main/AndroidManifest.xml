@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.a300276335.fitflex">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.facebook.sdk.ApplicationId"
+            android:value="@string/facebook_app_id" />
+
+        <activity
+            android:name=".SplashActivity"
+            android:theme="@style/SplashTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:theme="@style/LoginTheme">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".NutriSuppsActivity"
+            android:theme="@style/BaseTheme" >
+            <meta-data android:name="android.app.default_searchable"
+                android:value=".SearchableActivity" />
+        </activity>
+        <activity
+            android:name=".ExerciseActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".WorkoutActivity"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".NutritionActivity" />
+        <activity android:name=".SupplementActivity" />
+        <activity android:name=".PdfActivity" />
+        <activity android:name=".YouTubeActivity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:theme="@style/LoginTheme">
+
+            <!--
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            -->
+        </activity>
+        <activity
+            android:name="com.facebook.FacebookActivity"
+            android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
+            android:label="@string/app_name"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+        <activity
+            android:name=".ProgressReportActivity"
+            android:theme="@style/BaseTheme" />
+        <activity
+            android:name=".ProgressTrackerActivity"
+            android:theme="@style/BaseTheme" />
+        <activity android:name=".ProgressResultActivity" />
+        <activity android:name=".SearchableActivity" android:theme="@style/BaseTheme">
+            <intent-filter>
+                <action android:name="android.intent.action.SEARCH" />
+            </intent-filter>
+            <meta-data android:name="android.app.searchable"
+                android:resource="@xml/searchable"/>
+        </activity>
+    </application>
+
+</manifest>

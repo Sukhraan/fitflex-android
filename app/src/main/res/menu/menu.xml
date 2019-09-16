@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:id="@+id/group_1"
+        android:checkableBehavior="single">
+
+    <item android:id="@+id/item_exercises"
+        android:checkable="true"
+        android:icon="@drawable/exercises"
+        android:title="Exercises"
+    />
+
+    <item android:id="@+id/item_workout"
+        android:checkable="true"
+        android:icon="@drawable/workouts"
+        android:title="Workouts"
+        />
+
+    <item android:id="@+id/item_nutrition"
+        android:checkable="true"
+        android:icon="@drawable/nutritions"
+        android:title="Nutrition"
+        />
+
+    <item android:id="@+id/item_suppliment"
+        android:checkable="true"
+        android:icon="@drawable/supplements"
+        android:title="Supplements"
+        />
+    </group>
+    <group
+        android:id="@+id/group_2"
+        android:checkableBehavior="single">
+
+        <item android:id="@+id/item_progress"
+        android:checkable="true"
+        android:icon="@drawable/progress"
+        android:title="Progress Tracker"
+        />
+
+    <item android:id="@+id/item_logout"
+        android:checkable="true"
+        android:icon="@drawable/logout"
+        android:title="Log Out"/>
+
+    </group>
+
+</menu>
